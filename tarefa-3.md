@@ -37,7 +37,7 @@ Para ello escribiremos el siguiente comando
 christian@christian-VirtualBox:~$ systemctl status mysql.service
 ```
 
-![SYSTEMCTL_REPASO](./imagenes/repaso_systemctl.png)
+![SYSTEMCTL_REPASO](./img/repaso_systemctl.png)
   > Podemos observar que el servicio `MySQL` se está ejecutando correctamente..
   > Systemctl no funciona con el usuario `root`
 
@@ -48,7 +48,7 @@ Para ello, teclearemos el siguiente comando:
 ```console
 christian@christian-VirtualBox:~$ mysql -u root -p
 ```
-![MySQL_ROOT_USER](./imagenes/repaso_mysql_user_root.png)
+![MySQL_ROOT_USER](./img/repaso_mysql_user_root.png)
   > Como ya hicimos la autenticación de contraseña para el usuario root, procederemos a usar dicho usuario...
 
 👁 [ÍNDICE](#sql-bbdd_index)
@@ -60,14 +60,14 @@ Para ello en MySQL, teclearemos lo siguiente
 ```sql
 CREATE DATABASE REPASO_BBDD;
 ```
-![CREATE_BBDD_REPASO](./imagenes/repaso_create_bbdd.png)
+![CREATE_BBDD_REPASO](./img/repaso_create_bbdd.png)
   > 🛡NOTA: En MySQL, no existe ninguna diferencia entre `CREATE SCHEMA` y `CREATE DATABASE`.
   > En otros SGBD (Ej: Oracle) si existe diferencia (Permisos...)
 
 ```sql
 SHOW DATABASES;
 ```
-![SHOW_DATABASE_REPASO](./imagenes/repaso_show-bbdd.png)
+![SHOW_DATABASE_REPASO](./img/repaso_show-bbdd.png)
 
 👁 [ÍNDICE](#sql-bbdd_index)
 
@@ -78,7 +78,7 @@ Escribimos 👇
 ```sql
 DROP DATABASE REPASO_BBDD;
 ```
-![DROP_DATABASE_REPASO](./imagenes/repaso_drop_database.png)
+![DROP_DATABASE_REPASO](./img/repaso_drop_database.png)
   > 🛡PELIGRO: Cuidado con la sentencia `DROP`, una vez ejecutada ya no se puede revertir...
   
 Y comprobamos 🤞
@@ -86,7 +86,7 @@ Y comprobamos 🤞
 ```sql
 SHOW DATABASES;
 ```
-![SHOW_DATABASE_REPASO2](./imagenes/repaso_show-bbdd_2.png)
+![SHOW_DATABASE_REPASO2](./img/repaso_show-bbdd_2.png)
 
 👁 [ÍNDICE](#sql-bbdd_index)
 
@@ -103,7 +103,7 @@ Lo primero, antes de nada, crearemos la base de datos...
 ```sql
 CREATE DATABASE Proyecto_de_Investigacion;
 ```
-![CREATE DATABASE - PROYECTO DE INVESTIGACION](./imagenes/create_database_proyecto-de-investigacion.png)
+![CREATE DATABASE - PROYECTO DE INVESTIGACION](./img/create_database_proyecto-de-investigacion.png)
 
 Lo siguiente será seleccionar dicha base de datos (Para ello mostraremos las disponibles) 👇
 
@@ -115,7 +115,7 @@ SHOW DATABASES;
 USE Proyecto_de_Investigacion;
 ```
 
-![MOSTRAR Y SELECCIONAR LA BBDD](./imagenes/show_and_use-databases.png)
+![MOSTRAR Y SELECCIONAR LA BBDD](./img/show_and_use-databases.png)
 
 ### CREACIÓN Y MODIFICACIÓN DE TABLAS - (PROYECTO DE INVESTIGACIÓN)
 
@@ -123,59 +123,59 @@ Ahora que hemos creado la BBDD, nos tocará dar paso a la creación de tablas...
 
 #### CREACIÓN TABLA SEDE - (PROYECTO DE INVESTIGACIÓN)
 
-![CREACIÓN DE TABLA_SEDE](./imagenes/create_table-sede.png)
+![CREACIÓN DE TABLA_SEDE](./img/create_table-sede.png)
 
 #### CREACIÓN TABLA DEPARTAMENTO - (PROYECTO DE INVESTIGACIÓN)
 
-![CREACIÓN DE TABLA_DEPARTAMENTO](./imagenes/create_table-departamento.png)
+![CREACIÓN DE TABLA_DEPARTAMENTO](./img/create_table-departamento.png)
 
 #### CREACIÓN TABLA UBICACIÓN - (PROYECTO DE INVESTIGACIÓN)
 
-![CREACIÓN DE TABLA_UBICACIÓN](./imagenes/create_table-ubicacion.png)
+![CREACIÓN DE TABLA_UBICACIÓN](./img/create_table-ubicacion.png)
 
 👁 [ÍNDICE](#sql-bbdd_index)
 
 #### CREACIÓN TABLA GRUPO - (PROYECTO DE INVESTIGACIÓN)
 
-![CREACIÓN DE TABLA_GRUPO](./imagenes/create_table-grupo.png)
+![CREACIÓN DE TABLA_GRUPO](./img/create_table-grupo.png)
 
 #### CREACIÓN TABLA PROFESOR - (PROYECTO DE INVESTIGACIÓN)
 
-![CREACIÓN DE TABLA_PROFESOR](./imagenes/create_table-profesor.png)
+![CREACIÓN DE TABLA_PROFESOR](./img/create_table-profesor.png)
 
 #### CREACIÓN TABLA PROYECTO - (PROYECTO DE INVESTIGACIÓN)
 
-![CREACIÓN DE TABLA_PROYECTO](./imagenes/create_table-proyecto.png)
+![CREACIÓN DE TABLA_PROYECTO](./img/create_table-proyecto.png)
 
 👁 [ÍNDICE](#sql-bbdd_index)
 
 #### MODIFICACIÓN TABLA DEPARTAMENTO - (PROYECTO DE INVESTIGACIÓN)
 
-![MODIFICACIÓN DE TABLA_PROGRAMA](./imagenes/alter_table-departamento.png)
+![MODIFICACIÓN DE TABLA_PROGRAMA](./img/alter_table-departamento.png)
 
 #### MODIFICACIÓN TABLA GRUPO - (PROYECTO DE INVESTIGACIÓN)
 
-![MODIFICACIÓN DE TABLA_FINANCIA](./imagenes/alter_table-grupo.png)
+![MODIFICACIÓN DE TABLA_FINANCIA](./img/alter_table-grupo.png)
 
 #### CREACIÓN TABLA PARTICIPA - (PROYECTO DE INVESTIGACIÓN)
 
-![CREACIÓN DE TABLA_PARTICIPA](./imagenes/create_table-participa.png)
+![CREACIÓN DE TABLA_PARTICIPA](./img/create_table-participa.png)
 
 #### CREACIÓN TABLA PROGRAMA - (PROYECTO DE INVESTIGACIÓN)
 
-![CREACIÓN DE TABLA_PROGRAMA](./imagenes/create_table-programa.png)
+![CREACIÓN DE TABLA_PROGRAMA](./img/create_table-programa.png)
 
 #### CREACIÓN TABLA FINANCIA - (PROYECTO DE INVESTIGACIÓN)
 
-![CREACIÓN DE TABLA_FINANCIA](./imagenes/create_table-financia.png)
+![CREACIÓN DE TABLA_FINANCIA](./img/create_table-financia.png)
 
 #### MODIFICACIÓN TABLA FINANCIA_1 - (PROYECTO DE INVESTIGACIÓN)
 
-![MODIFICACIÓN DE TABLA_PROGRAMA](./imagenes/alter_table-financia_1.png)
+![MODIFICACIÓN DE TABLA_PROGRAMA](./img/alter_table-financia_1.png)
 
 #### MODIFICACIÓN TABLA FINANCIA_2 - (PROYECTO DE INVESTIGACIÓN)
 
-![MODIFICACIÓN DE TABLA_FINANCIA](./imagenes/alter_table-financia_2.png)
+![MODIFICACIÓN DE TABLA_FINANCIA](./img/alter_table-financia_2.png)
 
 ### RESULTADO [MUESTRA DE TABLAS] - (PROYECTO DE INVESTIGACIÓN)
 Si queremos ver las tablas...
@@ -183,7 +183,7 @@ Si queremos ver las tablas...
 ```sql
 SHOW TABLES;
 ```
-![SHOW_TABLES](./imagenes/show_tables.png)
+![SHOW_TABLES](./img/show_tables.png)
 
 Ya que vimos como se creaban las tablas, ahora detallaremos, como mostrar alguna que otra tabla, de manera detallada...
 
@@ -192,7 +192,7 @@ Para ello escribiremos 👇
 ```sql
 DESC Departamento;
 ```
-![DESCRIBE_DEPARTAMENTO](./imagenes/desc_departamento.png)
+![DESCRIBE_DEPARTAMENTO](./img/desc_departamento.png)
   > La opción `DESC` también se conoce como la opción `DESCRIBE` (la cual detalla cualquier tabla que seleccionemos...)
   > Está opción, la usaremos más a fondo, cuando vayamos a crear, la base de datos, "Naves Espaciales".
   
@@ -217,10 +217,10 @@ source /home/christian/Documentos/BBDD/Naves_Espaciales.sql;
 ```
 En nuestro caso, al estar "dentro", seleccionaremos la 2º opción
 
-![MySQL_SOURCE](./imagenes/mysql_source.png)
+![MySQL_SOURCE](./img/mysql_source.png)
 
 Ahora seleccionamos la BBDD importada.. 
-![USE_NAVES-ESPACIALES](./imagenes/use_naves-espaciales.png)
+![USE_NAVES-ESPACIALES](./img/use_naves-espaciales.png)
 
 ```sql
 USE NAVES_ESPACIALES;
@@ -230,7 +230,7 @@ Mostramos (como hicimos con Proyecto de Investigación) sus respectivas tablas..
 ```sql
 SHOW TABLES;
 ```
-![SHOW_TABLES](./imagenes/show_tables_2.png)
+![SHOW_TABLES](./img/show_tables_2.png)
 
 👁 [ÍNDICE](#sql-bbdd_index)
 
@@ -243,35 +243,35 @@ Escribiremos 👇
 ```sql
 DESC Camara;
 ```
-![DESC_CAMARA](./imagenes/desc_camara.png)
+![DESC_CAMARA](./img/desc_camara.png)
 
 #### DESCRIPCIÓN TABLA DEPENDENCIA - (NAVES ESPACIALES)
 
 ```sql
 DESC Dependencia;
 ```
-![DESC_DEPENDENCIA](./imagenes/desc_dependencia.png)
+![DESC_DEPENDENCIA](./img/desc_dependencia.png)
 
 #### DESCRIPCIÓN TABLA HABITA - (NAVES ESPACIALES)
 
 ```sql
 DESC Habita;
 ```
-![DESC_HABITA](./imagenes/desc_habita.png)
+![DESC_HABITA](./img/desc_habita.png)
 
 #### DESCRIPCIÓN TABLA PLANETA - (NAVES ESPACIALES)
 
 ```sql
 DESC Planeta;
 ```
-![DESC_PLANETA](./imagenes/desc_planeta.png)
+![DESC_PLANETA](./img/desc_planeta.png)
 
 #### DESCRIPCIÓN TABLA RAZA - (NAVES ESPACIALES)
 
 ```sql
 DESC Raza;
 ```
-![DESC_RAZA](./imagenes/desc_raza.png)
+![DESC_RAZA](./img/desc_raza.png)
 
 👁 [ÍNDICE](#sql-bbdd_index)
 
@@ -280,14 +280,14 @@ DESC Raza;
 ```sql
 DESC Servicio;
 ```
-![DESC_SERVICIO](./imagenes/desc_servicio.png)
+![DESC_SERVICIO](./img/desc_servicio.png)
 
 #### DESCRIPCIÓN TABLA TRIPULACIÓN - (NAVES ESPACIALES)
 
 ```sql
 DESC Tripulacion;
 ```
-![DESC_TRIPULACION](./imagenes/desc_tripulacion.png)
+![DESC_TRIPULACION](./img/desc_tripulacion.png)
 
 #### DESCRIPCIÓN TABLA VISITA - (NAVES ESPACIALES)
 
