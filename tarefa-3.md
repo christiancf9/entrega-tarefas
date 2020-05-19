@@ -294,7 +294,7 @@ DESC Tripulacion;
 ```sql
 DESC Visita;
 ```
-![DESC_VISITA](./imagenes/desc_visita.png)
+![DESC_VISITA](./img/desc_visita.png)
 
 👁 [ÍNDICE](#sql-bbdd_index)
 
