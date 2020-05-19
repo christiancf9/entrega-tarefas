@@ -25,7 +25,7 @@ Para comprobar el estado del proceso de MySQL en Ubuntu, escribiremos lo siguien
 ```console
 christian@christian-VirtualBox:~$ systemctl status mysql.service
 ```
-![SYSTEMCTL_REPASO](./imagenes/repaso_systemctl.png)
+![SYSTEMCTL_REPASO](./img/repaso_systemctl.png)
   > Podemos observar que el servicio `MySQL` se está ejecutando correctamente..
   > Systemctl no funciona con el usuario `root`. Eso si, nos pedirá obviamente la password..
   >
@@ -41,7 +41,7 @@ Con este sencillo comando, visualizaremos las bases de datos `BBDD` creadas en e
 ```sql
 SHOW DATABASES;
 ```
-![SHOW_DATABASES](./imagenes/show_and_use-databases.png)
+![SHOW_DATABASES](./img/show_and_use-databases.png)
   > También podemos usar el siguiente comando: ``SHOW SCHEMAS;``.
   
 ## SELECCIONAR UNA BASE DE DATOS <a name="comandos_seleccion"></a>
@@ -51,7 +51,7 @@ Con este sencillo comando, seleccionaremos una BBDD para más adelante, mostrar 
 ```sql
 USE <BBDD_Ejemplo>;
 ```
-![SHOW_DATABASES](./imagenes/use_naves-espaciales.png)
+![SHOW_DATABASES](./img/use_naves-espaciales.png)
   > También podemos usar el siguiente comando: ``CONNECT Naves_Espaciales;``.
  
 👁 [ÍNDICE](#comandos_index)
@@ -63,7 +63,7 @@ Sobre como visualizar las tablas..
 ```sql
 SHOW TABLES;
 ```
-![MOSTRAR_TABLAS](./imagenes/show_tables_2.png)
+![MOSTRAR_TABLAS](./img/show_tables_2.png)
   > También podemos usar el comando ``SHOW TABLE STATUS;``, pero en este caso
   > nos mostrara un "output" propio, del motor de MySQL
 
@@ -72,7 +72,7 @@ SHOW TABLES;
 ```sql
 DESC <Ejemplo-de-tabla>;
 ```
-![MOSTRAR INFO - TABLA](./imagenes/desc_departamento.png)
+![MOSTRAR INFO - TABLA](./img/desc_departamento.png)
   > La opción `DESC` también se conoce como la opción `DESCRIBE` (la cual detalla cualquier tabla que seleccionemos...).
   >
   > También podemos usar el comando ``SHOW COLUMNS FROM Departamento;``
@@ -84,7 +84,7 @@ DESC <Ejemplo-de-tabla>;
 ```console
 christian@christian-VirtualBox:~$ mysql --version
 ```
-![MYSQL_VERSION](./imagenes/comandos_mysql-version.png)
+![MYSQL_VERSION](./img/comandos_mysql-version.png)
   > Si usamos el comando ``apt-get update``, y volvemos a [instalar](https://gist.github.com/christiancf9/2d4452556ae7fbd1514f65af6360619b) el programa, tendremos actualizado `MySQL`
   
   > Opcionalmente podremos consultar la versión de MySQL**d** (Servidor ejecutable), para ello, escribiremos ``mysqld --version``
@@ -94,7 +94,7 @@ También dentro de **MySQL**, podremos realizar dicha consulta 👇
 ```sql
 SELECT version();
 ```
-![MYSQL_2 - VERSION](./imagenes/comandos_select-version.png)
+![MYSQL_2 - VERSION](./img/comandos_select-version.png)
   > O también podemos usar este comando -> ``select @@version;``
   >
   > 🛡NOTA: Solo para **MySQL**, en MariaDB sería ``SHOW VARIABLES LIKE ‘%version%’;``
