@@ -1,7 +1,7 @@
 # Tarefa 2
 
 # INSTALACIÓN MySQL
-![MYSQL](https://raw.githubusercontent.com/christiancf9/ApuntesSQL/master/imagenes/mysql.png)
+![MYSQL](./img/mysql.png)
 ***
 ***
 # INDICE <a name="mysql_index"></a>
@@ -17,7 +17,7 @@ En este documento, explicaremos paso a paso, la instalación de MySQL en Ubuntu 
 ```console
 christian@christian-VirtualBox:~$ sudo su
 ```
-![SUDO_SU](https://raw.githubusercontent.com/christiancf9/ApuntesSQL/master/imagenes/sudo_su.png)
+![SUDO_SU](./img/sudo_su.png)
 
 Una vez iniciados con el usuario root, teclearemos lo siguiente:
 
@@ -25,7 +25,7 @@ Una vez iniciados con el usuario root, teclearemos lo siguiente:
 root@christian-VirtualBox:/home/christian# apt-get update
 ```
 
-![APT-GET_UPDATE](https://raw.githubusercontent.com/christiancf9/ApuntesSQL/master/imagenes/apt-get_update.png)
+![APT-GET_UPDATE](./img/apt-get_update.png)
 
  > Con esto actualizamos los paquetes en *Ubuntu*
  
@@ -36,10 +36,10 @@ Cuando haya terminado de actualizar los paquetes, escribiremos lo siguiente
 root@christian-VirtualBox:/home/christian# apt-get install mysql-server
 ```
 
-![INSTALLING MYSQL](https://raw.githubusercontent.com/christiancf9/ApuntesSQL/master/imagenes/apt-get_install_mysql-server.png)
+![INSTALLING MYSQL](./img/apt-get_install_mysql-server.png)
 
 Introduciremos nuestra contraseña (o bien personalizada o bien la misma que tenemos de *root*)
-![MYSQL-PASSWORD](https://raw.githubusercontent.com/christiancf9/ApuntesSQL/master/imagenes/mysql_password.png)
+![MYSQL-PASSWORD](./img/mysql_password.png)
 
 👁 [ÍNDICE](#mysql_index)
 
@@ -54,7 +54,7 @@ Ahora solamente ejecutaremos un script (script de seguridad).
 root@christian-VirtualBox:/home/christian# mysql_secure_installation
 ```
 
-![MYSQL-SECURE](https://raw.githubusercontent.com/christiancf9/ApuntesSQL/master/imagenes/mysql_secure.png)
+![MYSQL-SECURE](./img/mysql_secure.png)
 
 🛡 Cuando nos pida un tipo de contraseña, introduciremos '2' y la nueva contraseña (Very Strong)
  > Ahora simplemente, introduciremos 'YES' todo el rato, hasta acabar con la instalación
@@ -69,7 +69,7 @@ Y por último, para ver que el servicio arranco correctamente, introduciremos el
 christian@christian-VirtualBox:~$ systemctl status mysql.service
 ```
 
-![MYSQL-SECURE](https://raw.githubusercontent.com/christiancf9/ApuntesSQL/master/imagenes/systemctl.png)
+![MYSQL-SECURE](./img/systemctl.png)
 
  > En la Tarea3y4 mostraré como crear una BBDD correctamente
  
